@@ -9,6 +9,10 @@ Simply download the script, you will need to have at least php cli installed.
 ```
 wget "https://raw.githubusercontent.com/Thytrem/rootme_login/master/rootme_login.php"
 ```
+If its not done, you will need to install curl for php
+```
+sudo apt-get install php5-curl
+```
 Run the script and enter your credentials
 ```
 php rootme_login.php
