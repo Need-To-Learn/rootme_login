@@ -22,3 +22,5 @@ Password :
 Have a good fl4g !!!
 ```
 You will probably need to wait a few seconds before trying to access any root-me's services.
+
+Ps : only tested on php5.6
