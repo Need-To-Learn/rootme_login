@@ -2,7 +2,6 @@
 rootme_login is a script wich allow you to login into Root-me.org using only your terminal.
 Its very useful if you want to access challenges from your VPS.
 
-La connexion n'affiche pas votre mot de passe dans votre console et le mot de passe est hashé avant de l'envoyer au serveur.
 The script doesn't print your password on the screen and it encrypts the password before sending it to the server.
 
 ##How to use it
