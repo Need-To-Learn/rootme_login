@@ -28,3 +28,16 @@ Have a good fl4g !!!
 You will probably need to wait a few seconds before trying to access any root-me's services.
 
 Ps : only tested on php5.6
+
+```
+ssh -p 2222 app-script-ch11@challenge01.root-me.org
+                 _    
+ _ __ ___   ___ | |_       _ __ ___   ___    ___  _ __ __ _ 
+| '__/ _ \ / _ \| __| ___ | '_ ` _ \ / _ \  / _ \| '__/ _` |
+| | | (_) | (_) | |__|___|| | | | | |  __/_| (_) | | | (_| |
+|_|  \___/ \___/ \__|     |_| |_| |_|\___(_)\___/|_|  \__, |
+                                                      |___/ 
+
+app-script-ch11@challenge01.root-me.org's password:
+```
+And voilà !
