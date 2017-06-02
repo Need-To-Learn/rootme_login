@@ -1,5 +1,5 @@
 <?php
-define('LOGIN_URL', 'http://www.root-me.org/spip.php?page=login&lang=fr&ajax=1');
+define('LOGIN_URL', 'https://www.root-me.org/spip.php?page=login&lang=fr&ajax=1');
 define("COOKIE_FILE", ".rootme_cookie.txt");
 
 /**
@@ -12,8 +12,8 @@ function urlify($fields = array())
 	$fields_string = '';
 
 	foreach($fields as $key=>$value)
-	{ 
-		$fields_string .= $key.'='.$value.'&'; 
+	{
+		$fields_string .= $key.'='.$value.'&';
 	}
 	rtrim($fields_string, '&');
 
@@ -70,6 +70,8 @@ function parse_form_action_args($html)
 	$pattern = "/<input name='formulaire_action_args' type='hidden'
 value='(.)+'/";
 	preg_match($pattern, $html, $match);
+	if (!$match[0])
+		return ;
 	$match = explode('=', $match[0]);
 
 	return trim($match[3], "'");
@@ -88,7 +90,7 @@ function get_info_user($login)
 	'var_compteur' => time()
 	];
 	$fields_string = urlify($fields);
-	$result = get_request("http://www.root-me.org/spip.php?".$fields_string);
+	$result = get_request("https://www.root-me.org/spip.php?".$fields_string);
 	return json_decode($result, 'true');
 }
 
@@ -168,7 +170,7 @@ $result = connexion($token, $LOGIN, $password);
 if (strpos($result, "Vous êtes enregistré"))
 {
 	echo "[+] Login Success\n";
-	$result = get_request("http://www.root-me.org/?page=news&lang=fr");
+	$result = get_request("https://www.root-me.org/?page=news&lang=fr");
 	if (strpos($result, "Se déconnecter"))
 	{
 		echo "[+] Connected to spip\n";
