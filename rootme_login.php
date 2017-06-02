@@ -174,7 +174,7 @@ if (strpos($result, "Vous êtes enregistré"))
 	if (strpos($result, "Se déconnecter"))
 	{
 		echo "[+] Connected to spip\n";
-		echo "Don't forget to send my your flags in PM ;)\n";
+		echo "Don't forget to send me your flags in PM ;)\n";
 	}
 	else
 		echo "[-] Spip connection failed\n";

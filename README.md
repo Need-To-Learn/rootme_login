@@ -31,7 +31,7 @@ Login : NeedToLearn
 Password :
 [+] Login Success
 [+] Connected to spip
-Don't forget to send my your flags in PM ;)
+Don't forget to send me your flags in PM ;)
 ```
 
 You will probably need to wait a few seconds before trying to access any root-me's services.
